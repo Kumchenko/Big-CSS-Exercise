@@ -1,0 +1,517 @@
+/* =========================== */
+/* ====== SPECIFICATION ====== */
+/* =========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #1b3bde;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1.18em;
+    letter-spacing: 0.03em;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.32em;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.logo, .contact {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    color: #fff;
+    font-size: 25px;
+    background-color: #1b3bde;
+    border-radius: 5px;
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+}
+
+.logo__label {
+    margin-left: 12px;
+    width: 95px;
+    color: #1b3bde;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.logo__label_high {
+    font-size: 20px;
+}
+
+.contact__tel {
+    margin-left: 6px;
+    font-weight: 900;
+}
+
+.big-card {
+    border-radius: 5px;
+    box-shadow: 0 13px 98px rgba(0, 0, 0, 0.24);
+}
+
+
+/* ==================== */
+/* ====== header ====== */
+/* ==================== */
+.header {
+    padding: 17px 0;
+}
+
+.header > .container {
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.links__item {
+    padding: 9px 20px 9px;
+}
+
+.links__item:hover {
+    background-color: #000;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-in;
+}
+
+.links__item:hover > .links__link {
+    color: #fff;
+    transition: color 0.2s ease-in;
+}
+
+.links__link {
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.contact__tel {
+    margin-left: 6px;
+    font-weight: 900;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__header {
+    text-align: center;
+}
+
+.info__desc {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+.info__date {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    max-width: 333px;
+    padding: 33px 34px 36px;
+    border-radius: 5px;
+    box-shadow: 0 0 70px 0px rgba(0, 0, 0, 0.250);
+}
+
+.form__header {
+    font-size: 17px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form__desc {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 29px;
+}
+
+
+.form__input {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 9px;
+}
+
+.form__input:not(:last-of-type) {
+    margin-bottom: 19px;
+}
+
+.form__input::placeholder {
+    color: #acacac;
+}
+
+.form__input:focus {
+    border-bottom: 1px solid #000;
+}
+
+.form__input:focus::placeholder {
+    color: #000;
+}
+
+.form__submit {
+    /* bg */
+    padding: 19px 0;
+    margin: 20px 0 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4acc4d;
+    /* text */
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+}
+
+.form__secured {
+    color: #adadad;
+    font-size: 12px;
+    text-align: center;
+}
+
+.how > .container, .show > .container {
+    display: block;
+}
+
+/* ========================== */
+/* ====== section MAIN ====== */
+/* ========================== */
+
+.main {
+    padding: 94px 0 134px;
+    background-image: url(../img/pattern_white.png);
+    color: #000;
+}
+
+.main > .container {
+    justify-content: space-around;
+}
+
+.main .info {
+    padding: 105px 0;
+}
+
+.main .info__header {
+    width: 540px;
+    margin: 24px 0 29px;
+}
+
+.main .info__date {
+    background-color: #000;
+    padding: 5px 19px 5px 17px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* ============================ */
+/* ====== section SECOND ====== */
+/* ============================ */
+
+.second {
+    padding: 121px 0 65px;
+}
+
+.me {
+    background-color: #9d6bdc;
+    color: #fff;
+    padding: 41px 86px 44px 55px;
+}
+
+.me__name {
+    opacity: 0.84;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.me__position {
+    width: 230px;
+    font-size: 15px;
+    margin: 10px 0 19px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+}
+
+.exp {
+    margin-bottom: 18px;
+    display: flex;
+}
+
+.exp .ico, .label {
+    display: inline-block;
+}
+
+.exp .ico {
+    font-size: 39px;
+    font-weight: 700;
+}
+
+.exp .label {
+    font-size: 13px;
+    font-weight: 400;
+    width: 72px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.years {
+    margin-left: 40px;
+}
+
+.exp .years__label {
+    width: 66px;
+}
+
+.me__more {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.second .question {
+    padding: 59px 136px 0 0;
+}
+
+.question__desc {
+    margin-top: 15px;
+    max-width: 437px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.57em;
+}
+
+/* =========================== */
+/* ====== section THIRD ====== */
+/* =========================== */
+
+.third {
+    padding-bottom: 221px;
+}
+
+.third .question {
+    padding: 70px 0 0 133px
+}
+
+.summ {
+    background-color: #f6e23a;
+    color: #000;
+    padding: 93px 172px 93px 171px;
+}
+
+.summ__amount {
+    font-size: 43px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.summ__month {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ========================= */
+/* ====== section HOW ====== */
+/* ========================= */
+
+.how {
+    padding-bottom: 193px;
+}
+
+.achieves {
+    margin-top: 71px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achieve {
+    display: flex;
+}
+
+.achieve:nth-child(2) .achieve__info {
+    width: 215px;
+}
+
+.achieve__marker {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 82px;
+    text-align: center;
+    width: 82px;
+    height: 82px;
+    border-radius: 5px;
+    background-color: #1b3bde;
+}
+
+.achieve__info {
+    width: 252px;
+    padding: 19px 0 0 34px;
+}
+
+.achieve__header {
+    color: #1b3bde;
+}
+
+.achieve__desc {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 11px;
+}
+
+/* ========================== */
+/* ====== section SHOW ====== */
+/* ========================== */
+
+.show {
+    padding-bottom: 100px;
+}
+
+.show__header {
+    margin-bottom: 65px;
+}
+
+.terms {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.term {
+    width: 348px;
+    box-shadow: 0 13px 98px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    color: #fff;
+    padding: 68px 45px 64px;
+}
+
+.term_green {
+    background-color: #4acc4d;
+}
+
+.term_cyan {
+    background-color: #4ac7cc;
+}
+
+.term_magenta {
+    background-color: #dc6b83;
+}
+
+.term .term__img {
+    display: block;
+    text-align: center;
+    font-size: 42px;
+}
+
+.term__header {
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* ========================== */
+/* ====== section SHOW ====== */
+/* ========================== */
+
+.last {
+    padding: 103px 0 102px;
+    background-image: url(../img/pattern_blue.png);
+    color: #fff;
+}
+
+.last > .container {
+    justify-content: space-evenly;
+}
+
+.last .info {
+    padding: 103px 0;
+}
+
+.last .info__header {
+    margin: 32px 0 28px;
+}
+
+.last .info__date {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.last .fa-users {
+    margin-left: 12px;
+}
+
+/* ==================== */
+/* ====== footer ====== */
+/* ==================== */
+
+.footer {
+    padding: 23px 0;
+}
+
+.footer > .container {
+    align-items: center;
+}
+
+.footer__secured {
+    font-size: 12px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    left: -185px;
+}
