@@ -19,7 +19,6 @@ body {
     width: 1140px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
 }
 
 h1 {
@@ -47,7 +46,7 @@ h3 {
     text-decoration: none;
 }
 
-.logo__img {
+.logo .logo__img {
     color: #fff;
     font-size: 25px;
     background-color: #1b3bde;
@@ -82,8 +81,15 @@ h3 {
 }
 
 .big-card {
+    width: 470px;
+    min-height: 265px;
     border-radius: 5px;
     box-shadow: 0 13px 98px rgba(0, 0, 0, 0.24);
+}
+
+.big-card:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.28);
 }
 
 
@@ -102,7 +108,8 @@ h3 {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-right: 250px;
+    margin-left: 85px;
+    margin-right: auto;
 }
 
 .links__item {
@@ -148,7 +155,7 @@ h3 {
     letter-spacing: 0.04em;
 }
 
-.info__date {
+.main .info__date {
     color: #fff;
     font-size: 14px;
     text-align: center;
@@ -219,8 +226,17 @@ h3 {
     font-size: 15px;
     font-weight: 900;
     letter-spacing: 0.02em;
-
+    /* other */
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form__submit:hover {
+    background-color: #7de67f;
+}
+
+.form__submit:active {
+    background-color: #4acc4d;
 }
 
 .form__secured {
@@ -269,6 +285,11 @@ h3 {
 
 .second {
     padding: 121px 0 65px;
+}
+
+.second > .container {
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .me {
@@ -329,7 +350,8 @@ h3 {
 }
 
 .second .question {
-    padding: 59px 136px 0 0;
+    margin-left: 97px;
+    margin-top: -18px;
 }
 
 .question__desc {
@@ -348,14 +370,24 @@ h3 {
     padding-bottom: 221px;
 }
 
+.third > .container {
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .third .question {
-    padding: 70px 0 0 133px
+    margin-right: 100px;
+    margin-top: -28px;
 }
 
 .summ {
     background-color: #f6e23a;
     color: #000;
-    padding: 93px 172px 93px 171px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .summ__amount {
@@ -383,14 +415,27 @@ h3 {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .achieve {
     display: flex;
+    max-width: 340px;
 }
 
-.achieve:nth-child(2) .achieve__info {
-    width: 215px;
+.achieve:hover .achieve__marker {
+    width: 87px;
+    height: 87px;
+    line-height: 87px;
+    font-size: 28px;
+    background-color: #0d27aa;
+    transition: all 0.4s ease;
+}
+
+.achieve:hover .achieve__header {
+    font-size: 20px;
+    transition: all 0.4s ease;
+    color: #0d27aa;
 }
 
 .achieve__marker {
@@ -403,11 +448,12 @@ h3 {
     height: 82px;
     border-radius: 5px;
     background-color: #1b3bde;
+    flex-shrink: 0;
 }
 
 .achieve__info {
-    width: 252px;
-    padding: 19px 0 0 34px;
+    margin-top: 19px;
+    margin-left: 34px;
 }
 
 .achieve__header {
@@ -437,14 +483,26 @@ h3 {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .term {
     width: 348px;
+    min-height: 235px;
     box-shadow: 0 13px 98px rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     color: #fff;
-    padding: 68px 45px 64px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.term:hover {
+    width: 363px;
+    min-height: 250px;
 }
 
 .term_green {
@@ -460,8 +518,6 @@ h3 {
 }
 
 .term .term__img {
-    display: block;
-    text-align: center;
     font-size: 42px;
 }
 
@@ -492,7 +548,8 @@ h3 {
     margin: 32px 0 28px;
 }
 
-.last .info__date {
+.last .info__summary {
+    display: flex;
     font-size: 16px;
     font-weight: 300;
 }
@@ -518,5 +575,6 @@ h3 {
     display: block;
     color: #000;
     text-decoration: none;
-    left: -185px;
+    margin-left: 160px;
+    margin-right: auto;
 }
