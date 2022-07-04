@@ -75,6 +75,10 @@ h3 {
     color: #000;
 }
 
+.contact__img {
+    transform: rotate(-90deg);
+}
+
 .contact__tel {
     margin-left: 6px;
     font-weight: 900;
